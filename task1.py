@@ -76,11 +76,10 @@ def profanity(data):
         Calculate the profanity for every tweet in data
     """
 
-    data["tweets"] = data["tweets"].apply(clean)
-    scores= data["tweets"].apply(distance)
+    clean_text = data["tweets"].apply(clean)
+    scores= clean_text.apply(distance)
     return scores
 
 data= pd.read_csv("tweets.csv")
 data["profanity"] = profanity(data)
-data.head()
-    
+print(data.head())
