@@ -5,7 +5,12 @@
     The model is created for "English" language. 
 
 ## Round 2:
-1. The following questions test your aptitude for interacting with databases. The questions are based off the following public SQL DB: https://docs.rfam.org/en/latest/database.html
+1. The following questions test your aptitude for interacting with databases. The questions are based off the following public SQL DB: https://docs.rfam.org/en/latest/database.html. 
+
+    > Connect database with following command in linux.
+    ```SQL 
+        mysql -u rfamro -h mysql-rfam-public.ebi.ac.uk -P  4497 -D Rfam 
+    ```
 
     - How many types of tigers can be found in the taxonomy table of the dataset? What is the "ncbi_id" of the Sumatran Tiger? (hint: use the biological name of the tiger)
     - Find all the columns that can be used to connect the tables in the given database.
